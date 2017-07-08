@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Why Finding Faces?</h2>
+<p>Blurb w/ cause</p>
+
+<p><a href="/" class="btn btn-primary">Donate Now</a><p>
+<p><a href="/" class="btn btn-primary">Upload Photo</a></p>
+
+ <div
+    class="fb-login-button"
+    data-max-rows="1"
+    data-size="<medium, large>"
+    data-button-type="continue_with"
+    data-width="<100% or px>"
+    data-scope="<comma separated list of permissions, e.g. public_profile, email>"
+></div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ti8SuftcXlk" frameborder="0" allowfullscreen></iframe>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '245251825970381',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+</head>
+
+<body>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li>Upload Photo</li>
+        </ul>
+        <ul class="nav navbar-nav nabar-left"><a href="/">Finding Faces</a></ul>
+    </div>
+
+
+
+<div class="container">
+
+  <!-- Show flashed messages -->
+  {% with messages = get_flashed_messages() %}
+      {% for message in messages %}
+          <div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              {{message}}
+          </div>
+      {% endfor %}
+  {% endwith %}
+
+  <!-- This is where the main content goes. -->
+  {% block content %}
+      BODY OF PAGE GOES HERE VIA INHERITANCE
+  {% endblock %}
+
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</body>
+</html>
