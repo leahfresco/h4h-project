@@ -2,7 +2,6 @@
 
 ![Hidden Faces](https://github.com/leahyukelson/h4h-project/blob/master/static/logo-hidden-faces.jpg)
 
-Hidden Faces
 
 ## Contents
 * [Mission](#mission)
@@ -20,19 +19,21 @@ Victims of human trafficking are invisible. They can be the faces that we pass o
 
 Someone tags you in a post on Facebook, Twitter or Instagram. 
 
+![Facebook Post](https://github.com/leahyukelson/h4h-project/blob/master/static/FB_post.JPG)
+
 ###### Step 2: User goes to Hidden Faces 
 
-
+Hidden Faces is a web app that has interactive components so that the user can learn more about the cause, engage with uploaded pictures and donate.
 
 ###### Step 3: User takes a photo of a hidden face and uploads it
 
 
 ###### Step 4: User shares their picture and the mission on their social media
 
+Our project relies on the viral spreading of the cute and funny hidden faces photos to bring awareness to a serious cause and rally support.
 
 ###### Step 5: User donates to SafeHouse
 
-Getting unrestricted funding for programs for victims is the most pressing challenge in providing adequate care for SafeHouse.
-
+SafeHouse's biggest challenge in providing adquate care for victims is getting unrestricted funding. Donations from Hidden Faces hopes to address this issue by engaging millenials to not only play and upload photos but to make a financial contribution.
 
 ###### Step 6: User looks through hidden faces picture gallery and votes for their favorite
