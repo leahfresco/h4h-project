@@ -9,7 +9,13 @@ db = SQLAlchemy()
 
 ##############################################################################
 # Model definitions
-
+class UserProfile(db.Model):
+    __tablename__ = 'user_profile'
+    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    facebook_id = db.Column(db.String(64), nullable=False, unique=True)
+    first_name = db.Column(db.String(64), nullable=True)
+    last_name = db.Column(db.String(64), nullable=True)
+    email = db.Column(db.String(64), nullable=True)
 
 
 ##############################################################################

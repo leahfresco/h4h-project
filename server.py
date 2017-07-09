@@ -2,16 +2,23 @@ from jinja2 import StrictUndefined
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import Flask, render_template, redirect, request, flash, session, jsonify, g, url_for
 from model import *
+import os
 
 app = Flask(__name__)
 
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = "hackingnow"
 
-# Normally, if you use an undefined variable in Jinja2, it fails
-# silently. This is horrible. Fix this so that, instead, it raises an
-# error.
+# Raises an error for Jinja2 errors
 app.jinja_env.undefined = StrictUndefined
+
+# For Facebook OAUTH
+app.config['OAUTH_CREDENTIALS'] = {
+    'facebook': {
+        'id': os.environ['FACEBOOK_API_ID'],
+        'secret': os.environ['FACEBOOK_SECRET_ID']
+    }
+}
 
 @app.route('/')
 def index():
