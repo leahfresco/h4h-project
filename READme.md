@@ -27,6 +27,11 @@ Hidden Faces is a web app that has interactive components so that the user can l
 
 ###### Step 3: User takes a photo of a hidden face and uploads it
 
+Example 'hidden faces':
+
+![Face Photo](https://github.com/leahyukelson/h4h-project/blob/master/static/f6.jpg)
+![Face Photo](https://github.com/leahyukelson/h4h-project/blob/master/static/f13.jpg)
+![Face Photo](https://github.com/leahyukelson/h4h-project/blob/master/static/f21.jpg)
 
 ###### Step 4: User shares their picture and the mission on their social media
 

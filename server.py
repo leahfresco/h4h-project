@@ -1,7 +1,6 @@
 from jinja2 import StrictUndefined
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import Flask, render_template, redirect, request, flash, session, jsonify, g, url_for
-from model import *
 import os
 
 app = Flask(__name__)
@@ -32,6 +31,6 @@ if __name__ == "__main__":
     app.debug = True
     app.jinja_env.auto_reload = app.debug  # make sure templates, etc. are not cached in debug mode
 
-    connect_to_db(app, 'postgresql:///h4hproject')
+    # connect_to_db(app, 'postgresql:///h4hproject')
 
     app.run(port=5000, host='0.0.0.0')

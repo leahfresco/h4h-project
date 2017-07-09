@@ -1,172 +1,44 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h2>Why Finding Faces?</h2>
+<div class="row pad-left-100"> <!-- instructions/video row -->
+    <div id="instructions" class="col-xs-6">
+  
+        <h4>Victims of human trafficking are invisible. </h4>
+  
+      <p>Anyone can be a victim of sex trafficking, and to bring awareness to these 
+        victims and survivors, this project asks you to look around at your 
+        environment and see the faces that are hidden there. Upload the photos you 
+        take, upvote your favorites in the gallery, and donate to Safehouse to help 
+        victims of sex trafficking. </p>
+    
+      <h4>How to Play:</h4>
+      <p>1. Take a photo of a hidden face.</p>
+      <p>2. Upload photo to site</p>
+      <p>3. Share on social media</p>
+      <p>4. Donate today</li>
+      <p>5. Vote</p>
+    </div> <!-- /div instructions -->
+    
+    <div class="col-xs-6 pad-top-20 pad-bottom-20"> <!-- video div -->
+      <iframe class="youtube" width="350" height="200" src="https://www.youtube.com/embed/Ti8SuftcXlk" frameborder="0" allowfullscreen></iframe>
+    </div> <!-- /div video -->
 
-<div class="container-fluid">
-<div class="row">
+  </div> <!-- /div instructions/video row -->
 
-<div id="instructions" class="col-xs-6">
-  <p>Victims of human trafficking are invisible. </p>
-  <p>Anyone can be a victim of sex trafficking, but the people most at risk are women and girls who come from marginalized communities: those who have survived sexual assault, war or conflict, homelessness, and social discrimination. To bring awareness to these victims and survivors, this project asks you to look around at your environment and see the faces that are hidden there. Upload the photos you take, upvote your favorites in the gallery, and donate to Safehouse to help victims of sex trafficking. </p>
-  <p>1. Upload</p>
-  <p>2. Create</p>
-  <p>3. Donate</p>
-  <p>4. Share with Friends </p>
-  <p>5. Vote</p>
+<div class="pad-right-20 col-xs-12">
+  <p class="nav navbar-nav"><font size="4pt">Organize by &nbsp;</font>
+  <input type="radio" name="organize" value="recent" checked> most recent &nbsp;
+  <input type="radio" name="organize" value="liked"> most liked</p>
 </div>
 
-<div class="col-xs-6">
-  <a href="/" class="btn btn-primary homebtn">Donate Now</a>
-  <a href="/" class="btn btn-primary homebtn">Upload Photo</a></p>
-
-  <iframe class="youtube" width="350" height="200" src="https://www.youtube.com/embed/Ti8SuftcXlk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="photos col-xs-12">
+{% for i in range(1, 24) %}
 <div class="gallery">
-  <a target="_blank" href="/static/f1.jpg">
-    <img src="/static/f1.jpg" alt="Face" width="300">
+  <a target="_blank" href="/static/f{{i}}.jpg">
+    <img src="/static/f{{i}}.jpg" alt="Face" width="250">
   </a>
 </div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f2.jpg">
-    <img src="/static/f2.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f3.jpg">
-    <img src="/static/f3.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f4.jpg">
-    <img src="/static/f4.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f5.jpg">
-    <img src="/static/f5.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f6.jpg">
-    <img src="/static/f6.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f7.jpg">
-    <img src="/static/f7.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f8.jpg">
-    <img src="/static/f8.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f9.jpg">
-    <img src="/static/f9.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f10.jpg">
-    <img src="/static/f10.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f11.jpg">
-    <img src="/static/f11.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f12.jpg">
-    <img src="/static/f12.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f13.jpg">
-    <img src="/static/f13.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f14.jpg">
-    <img src="/static/f14.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f15.jpg">
-    <img src="/static/f15.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f16.jpg">
-    <img src="/static/f16.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f17.jpg">
-    <img src="/static/f17.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f18.jpg">
-    <img src="/static/f18.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f19.jpg">
-    <img src="/static/f19.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f20.png">
-    <img src="/static/f20.png" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f21.jpg">
-    <img src="/static/f21.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f22.jpg">
-    <img src="/static/f22.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f23.jpg">
-    <img src="/static/f23.jpg" alt="Face" width="300">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="/static/f25.jpeg">
-    <img src="/static/f25.jpeg" alt="Face" width="300">
-  </a>
-</div>
+{% endfor %}
 
 </div>
 </div>
