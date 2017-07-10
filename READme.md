@@ -48,6 +48,6 @@ SafeHouse's biggest challenge in providing adquate care for victims is getting u
 ###### Step 6: User looks through hidden faces picture gallery and votes for their favorite
 
 
-## <a name="proto"></a>Prototyp
+## <a name="proto"></a>Prototype
 
 ![Prototype](https://github.com/leahyukelson/h4h-project/blob/master/static/homepage_ss.JPG)
