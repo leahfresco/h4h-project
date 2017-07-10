@@ -33,6 +33,10 @@ Example 'hidden faces':
 ![Face Photo](https://github.com/leahyukelson/h4h-project/blob/master/static/f13.jpg)
 ![Face Photo](https://github.com/leahyukelson/h4h-project/blob/master/static/f21.jpg)
 
+Photo upload page:
+
+![Photo upload](https://github.com/leahyukelson/h4h-project/blob/master/static/photo_add.JPG)
+
 ###### Step 4: User shares their picture and the mission on their social media
 
 Our project relies on the viral spreading of the cute and funny hidden faces photos to bring awareness to a serious cause and rally support.
@@ -42,3 +46,8 @@ Our project relies on the viral spreading of the cute and funny hidden faces pho
 SafeHouse's biggest challenge in providing adquate care for victims is getting unrestricted funding. Donations from Hidden Faces hopes to address this issue by engaging millenials to not only play and upload photos but to make a financial contribution.
 
 ###### Step 6: User looks through hidden faces picture gallery and votes for their favorite
+
+
+## <a name="proto"></a>Prototyp
+
+![Prototype](https://github.com/leahyukelson/h4h-project/blob/master/static/homepage_ss.JPG)
