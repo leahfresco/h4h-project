@@ -2,7 +2,18 @@ body {
     font-family: 'Roboto';
 }
 
+a{
+color: #FEB238;
+text-decoration: none;
+}
+
+h4{
+color: #8E8E8E;
+}
+
 div.gallery {
+
+    float: right !important;
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -41,11 +52,29 @@ div.instruction{
 div.pad-top-20{
     padding-top: 20px;
 }
+div.pad-top-40{
+    padding-top: 40px;
+}
 div.pad-right-20{
     padding-right: 20px;
 }
 div.pad-left-100{
     padding-left: 100px;
+}
+div.pad-left-115{
+    padding-left: 115px;
+}
+div.pad-left-30{
+    padding-left: 30px;
+}
+div.pad-left-50{
+    padding-left: 55px;
+}
+div.pad-right-100{
+    padding-right: 100px;
+}
+div.pad-right-120{
+    padding-right: 120px;
 }
 div.pad-left-20{
     padding-left: 20px;
